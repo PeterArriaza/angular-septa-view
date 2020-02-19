@@ -1,0 +1,15 @@
+<h1>Add a New Route</h1>
+
+<div>
+  <label>Start: </label>
+  <select>
+    <option *ngFor="let stop of stopData" [value]="stop">{{ stop }}</option>
+  </select>
+
+  <label>End: </label>
+  <select>
+    <option *ngFor="let stop of stopData" [value]="stop">{{ stop }}</option>
+  </select>
+</div>
+
+<div [routerLink]="['/']">Cancel</div>
